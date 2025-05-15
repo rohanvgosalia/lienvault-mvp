@@ -7,6 +7,9 @@ const statutes = {
 };
 
 document.getElementById('calcBtn').onclick = () => {
+  alert('🖱️ Calculate button clicked!');
+  console.log('🔥 calcBtn handler running');
+  
   const pdVal = document.getElementById('projectDate').value;
   if (!pdVal) return alert('Please pick a project date.');
   const pd = new Date(pdVal);
