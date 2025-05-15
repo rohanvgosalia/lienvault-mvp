@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>LienVault MVP</title>
+  <script src="https://cdn.jsdelivr.net/npm/date-fns@2.30.0/dist/date-fns.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <h1>LienVault MVP</h1>
+
+  <label>Project Date: 
+    <input type="date" id="projectDate">
+  </label>
+  <br>
+
+  <label>Jurisdiction:
+    <select id="jurisdiction">
+      <option value="ON">Ontario, Canada</option>
+      <option value="ID">Idaho, USA</option>
+    </select>
+  </label>
+  <br>
+
+  <button id="calcBtn">Calculate Deadlines</button>
+  <div id="deadlines" style="margin-top:1em;"></div>
+
+  <hr>
+
+  <button id="downloadPdf">Download Notice of Lien</button>
+
+  <script src="app.js"></script>
+</body>
+</html>
