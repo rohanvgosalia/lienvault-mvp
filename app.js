@@ -1,3 +1,5 @@
+alert('🔎 app.js is loaded!');
+
 // statute deadlines in days
 const statutes = {
   ON: { notice: 45, final: 60 },       // Ontario
